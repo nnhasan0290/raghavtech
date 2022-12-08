@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap");
 
 body {
   margin: 0;
-  
-  color: #41444B;
+
+  color: #41444b;
   background-color: #fff;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
   line-height: 28px;
 }
 
-.second-small-font{
+.second-small-font {
   font-size: 22px;
   line-height: 24px;
 }
@@ -28,23 +28,49 @@ body {
   color: black;
 }
 
-.hero-title{
+.hero-title {
   font-weight: 600;
-font-size: 80px;
-line-height: 84px;
-color: #FFFFFF;
+  font-size: 80px;
+  line-height: 84px;
+  color: #ffffff;
 }
+.control-dots {
+  text-align: start !important;
+  transform: translateY(200%);
+}
+
+.control-dots .dot {
+  background: #00215b !important;
+}
+.control-dots .dot.selected {
+  transform: scale(1.4);
+  background: #001ed3 !important;
+}
+.carousel.carousel-slider {
+  overflow: visible !important;
+}
+.contact-form {
+  background: url("../public/imgs/contact.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 390px;
+}
+
 
 @layer components {
   .flexible {
     @apply flex gap-2 justify-center items-center;
   }
-  .main-heading{
-    @apply font-[600] text-[55px] leading-[64px] text-black
+  .main-heading {
+    @apply font-[600] text-[55px] leading-[64px] text-black;
   }
-  .red-text{
-    @apply leading-[15px] text-[14px] font-[500] text-[#D2153D] uppercase
+  .red-text {
+    @apply leading-[15px] text-[14px] font-[500] text-[#D2153D] uppercase;
   }
+  .input-common-class {
+    @apply block px-3 py-1.5 m-0  text-base font-normal text-gray-700 bg-clip-padding bg-white rounded-[8px] shadow-[0_4px_15px_rgba(124,124,124,0.14)] transition ease-in-out focus:text-gray-700 pl-5 focus:bg-white focus:border-blue-600 h-[73px] w-full focus:outline-none placeholder:text-[rgba(0,0,0,0.5)] ;
+  }
+
+ 
 }
-
-

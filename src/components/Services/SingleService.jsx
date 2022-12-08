@@ -1,6 +1,6 @@
 const SingleService = ({img,title}) => {
   return (
-    <div className="flex-col gap-3 items-start flexible">
+    <div className="flex-col gap-3 items-start flexible service-flex-items">
       <img src={img} alt="img" />
       <h5 className="text-[#00215B] font-[700]">{title}</h5>
       <p className="tracking-tight w-[350px]">
