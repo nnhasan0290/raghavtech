@@ -1,6 +1,6 @@
 const TeamInfo = () => {
   return (
-    <div className="flex-col my-[100px] flexible">
+    <div className="flex-col mt-[100px] flexible">
       <h5 className="red-text">Team</h5>
       <h2 className="main-heading text-[#16213E]">Team Information</h2>
       <div className=" items-stretch my-[60px] w-full flexible gap-[50px]">

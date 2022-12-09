@@ -1,6 +1,6 @@
 const WhyChoose = () => {
   return (
-    <div className="container justify-between items-stretch mx-auto my-[100px] flexible">
+    <div className="container justify-between items-stretch mx-auto mt-[100px] flexible">
       <img src="/imgs/choose.png" alt="" />
       <div className="w-[517px] flexible flex-col justify-around  self-full">
         <h2 className="main-heading">Why choose Raghav Buildtech?</h2>

@@ -1,6 +1,9 @@
+import { GlobalRefStates } from "../../Context";
+
 const AboutUs = () => {
+  const {about} = GlobalRefStates()
   return (
-    <div className="container mx-auto flexible my-[100px] justify-between items-start">
+    <div ref={about} className="container mx-auto flexible pt-[100px] justify-between items-start">
       <div className="max-w-[608px] my-[70px] flexible flex-col gap-5 items-start">
         <h4 className="red-text">About Us</h4>
         <h2 className="main-heading text-[#16213E]">

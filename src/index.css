@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
   margin: 0;
@@ -14,6 +15,7 @@ body {
   font-style: normal;
   font-size: 17px;
   line-height: 28px;
+  scroll-behavior: smooth;
 }
 
 .second-small-font {
@@ -55,6 +57,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 390px;
+}
+
+.gradient {
+  background: linear-gradient(to right, #D2153D 50%, #00215B 50%) left;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom{
+  font-family: 'Montserrat', sans-serif;
 }
 
 
